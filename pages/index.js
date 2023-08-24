@@ -95,7 +95,7 @@ export default function Home() {
           <div className={'grid grid-cols-1 md:grid-cols-2 gap-4'}>
             <div className={''}>
               <label htmlFor={'prompt'} className={'block text-sm font-medium text-primary-main leading-6'}>
-                Describe the image you wish to generate:
+                Хүссэн зурагныхаа тайлбарыг бичээрэй:
               </label>
               <textarea
                 onChange={(e) => setPrompt(e.target.value)}
@@ -106,12 +106,14 @@ export default function Home() {
                 placeholder={'Generate a white furry cat sitting on a chair'}
                 rows={2}
               />
-              <span className={'mt-1 text-xs leading-6 text-primary-main'}>you can give a very detailed prompt</span>
+              <span className={'mt-1 text-xs leading-6 text-primary-main'}>
+                дэлгэрэнгүй мэдээлэл бичих шаардлагатай
+              </span>
             </div>
             <div className={''}>
               <div className={'w-full'}>
                 <label htmlFor={'size'} className={'block text-sm font-medium leading-6 text-primary-main'}>
-                  Select Image Size
+                  Зурагны хэмжээ сонгох
                 </label>
                 <select
                   id={'size'}
@@ -144,7 +146,7 @@ export default function Home() {
         <div className={'mt-4 pt-4 border-t'}>
           {loading ? (
             <div className={'h-100 flex flex-col justify-center items-center'}>
-              <p className={'text-md text-primary-main font-bold my-10'}>Generating Images ...</p>{' '}
+              <p className={'text-md text-primary-main font-bold my-10'}>Зураг боловсруулж байна ...</p>{' '}
               <img src={'/no-data.svg'} alt={'no data image'} className={'w-1/3 sm:w-1/5 h-auto'} />
             </div>
           ) : images.length > 0 ? (
@@ -155,7 +157,7 @@ export default function Home() {
             </div>
           ) : (
             <div className={'h-100 flex flex-col justify-center items-center'}>
-              <p className={'text-md text-primary-main font-bold my-10'}>No data to display</p>{' '}
+              <p className={'text-md text-primary-main font-bold my-10'}>Дэлгэцэнд үзүүлэх өгөгдөл байхгүй байн</p>{' '}
               <img src={'/no-data.svg'} alt={'no data image'} className={'w-1/3 sm:w-1/5 h-auto'} />
             </div>
           )}
@@ -163,7 +165,7 @@ export default function Home() {
       </div>
 
       <div className={'flex justify-between items-center py-4 max-w-5xl mx-auto border-t px-5 lg:px-0'}>
-        <div className={'text-sm uppercase text-primary-main'}>all right reserved</div>
+        <div className={'text-sm uppercase text-primary-main'}>d.3.v.3.1.0.p.3.r</div>
         <Link href={'#'} target={'_blank'}>
           <img src={'/github-mark.svg'} alt={'github-repo'} className={'h-7 w-7'} />
         </Link>
