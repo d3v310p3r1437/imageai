@@ -136,7 +136,7 @@ export default function Home() {
                       'rounded-md bg-primary-main px-3 py-2 hover:bg-primary-dark text-primary-contrastText font-semibold shadow-sm disabled:bg-primary-light disabled:cursor-not-allowed'
                     }
                   >
-                    {loading ? 'Generating...' : 'Generate'}
+                    {loading ? 'Боловсруулж байна ...' : 'Боловсруулах'}
                   </button>
                 </div>
               </div>
@@ -157,7 +157,7 @@ export default function Home() {
             </div>
           ) : (
             <div className={'h-100 flex flex-col justify-center items-center'}>
-              <p className={'text-md text-primary-main font-bold my-10'}>Дэлгэцэнд үзүүлэх өгөгдөл байхгүй байн</p>{' '}
+              <p className={'text-md text-primary-main font-bold my-10'}>Дэлгэцэнд үзүүлэх өгөгдөл байхгүй байна.</p>{' '}
               <img src={'/no-data.svg'} alt={'no data image'} className={'w-1/3 sm:w-1/5 h-auto'} />
             </div>
           )}
